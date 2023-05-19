@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cetak Laporan Absen</title>
+    <title>Cetak Laporan Nilai</title>
     <link rel="shortcut icon" href="{{ url('logo_si_mini.svg') }}" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <style>
@@ -39,27 +39,27 @@
             <thead>
                 <tr class="text-center">
                     <th rowspan="2" style="vertical-align : middle; text-align:center;">Kelas & Semester</th>
-                    <th colspan="6">Nilai</th>
+                    <th style="vertical-align : middle; text-align:center;" colspan="6">Nilai</th>
                 </tr>
                 <tr class="text-center">
-                    <th>Matematika</th>
-                    <th>Keislaman</th>
-                    <th>Bahasa Arab</th>
-                    <th>Bahasa Inggris</th>
-                    <th>IPA</th>
-                    <th>IPS</th>
+                    <th style="vertical-align : middle; text-align:center;">Matematika</th>
+                    <th style="vertical-align : middle; text-align:center;">Keislaman</th>
+                    <th style="vertical-align : middle; text-align:center;">Bahasa Arab</th>
+                    <th style="vertical-align : middle; text-align:center;">Bahasa Inggris</th>
+                    <th style="vertical-align : middle; text-align:center;">IPA</th>
+                    <th style="vertical-align : middle; text-align:center;">IPS</th>
                 </tr>
             </thead>
             <tbody>
                 @forelse ($item->nilai as $item2)
                 <tr class="text-center">
-                    <td>Kelas {{ $item2->jenjang }} {{ $item2->kelas }} Semester {{ $item2->semester }}</td>
-                    <td>{{ $item2->matematika }}</td>
-                    <td>{{ $item2->keislaman }}</td>
-                    <td>{{ $item2->bahasa_arab }}</td>
-                    <td>{{ $item2->bahasa_inggris }}</td>
-                    <td>{{ $item2->ipa }}</td>
-                    <td>{{ $item2->ips }}</td>
+                    <td style="vertical-align : middle; text-align:center;">Kelas {{ $item2->jenjang }} {{ $item2->kelas }} Semester {{ $item2->semester }}</td>
+                    <td style="vertical-align : middle; text-align:center;">{{ $item2->matematika }}</td>
+                    <td style="vertical-align : middle; text-align:center;">{{ $item2->keislaman }}</td>
+                    <td style="vertical-align : middle; text-align:center;">{{ $item2->bahasa_arab }}</td>
+                    <td style="vertical-align : middle; text-align:center;">{{ $item2->bahasa_inggris }}</td>
+                    <td style="vertical-align : middle; text-align:center;">{{ $item2->ipa }}</td>
+                    <td style="vertical-align : middle; text-align:center;">{{ $item2->ips == '' ? '-' : $item2->ips }}</td>
                 </tr>
             </div>
                 @empty

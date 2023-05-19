@@ -12,11 +12,26 @@
                     @csrf
                     @method('PUT')
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label for="nisn">NISN</label><sup class="text-danger">(*)</sup>
                                 <input type="number" name="nisn" class="form-control @error('nisn') is-invalid @enderror" id="nisn" placeholder="NISN" value="{{ old('nisn', $item->nisn) }}" required>
                                 @error('nisn')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="jurusan">Jurusan</label><sup class="text-danger">(*)</sup>
+                                <select name="jurusan" id="jurusan" class="jurusan w-100" required>
+                                    <option value=""></option>
+                                    <option value="IPA" @if(old('jurusan') == 'IPA') selected @endif>IPA</option>
+                                    <option value="IPS" @if(old('jurusan') == 'IPS') selected @endif>IPS</option>
+                                </select>
+                                @error('jurusan')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -262,6 +277,11 @@
         $(document).ready(function() {
             $('.orang_tua').select2({
                 placeholder: "-- Pilih Orang Tua --",
+                allowClear: true,
+                theme: "classic",
+            });
+            $('.jurusan').select2({
+                placeholder: "-- Pilih Jurusan --",
                 allowClear: true,
                 theme: "classic",
             });

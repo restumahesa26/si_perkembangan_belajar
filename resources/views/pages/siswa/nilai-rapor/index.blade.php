@@ -65,7 +65,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label for="tahun_ajaran">Tahun Ajaran</label><sup class="text-danger">(*)</sup>
-                                                <input type="tahun_ajaran" name="tahun_ajaran" class="form-control @error('tahun_ajaran') is-invalid @enderror" id="tahun_ajaran" placeholder="Tahun Ajaran" value="{{ old('tahun_ajaran') }}">
+                                                <input type="tahun_ajaran" name="tahun_ajaran" class="form-control @error('tahun_ajaran') is-invalid @enderror" id="tahun_ajaran" placeholder="Contoh : 2023-2024" value="{{ old('tahun_ajaran') }}">
                                                 @error('tahun_ajaran')
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $message }}</strong>
@@ -119,6 +119,7 @@
                                                 @enderror
                                             </div>
                                         </div>
+                                        @if (Auth::user()->siswa->jurusan == 'IPA')
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <label for="ipa">Nilai IPA</label><sup class="text-danger">(*)</sup>
@@ -130,6 +131,8 @@
                                                 @enderror
                                             </div>
                                         </div>
+                                        @endif
+                                        @if (Auth::user()->siswa->jurusan == 'IPS')
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <label for="ips">Nilai IPS</label><sup class="text-danger">(*)</sup>
@@ -141,6 +144,7 @@
                                                 @enderror
                                             </div>
                                         </div>
+                                        @endif
                                     </div>
                                 </div>
                                 <div class="modal-footer">

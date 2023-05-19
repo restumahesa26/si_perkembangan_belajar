@@ -22,7 +22,8 @@
                             </select>
                         </div>
                         <div class="col-md-3">
-                            <a href="{{ route('rekapan.cetak', $item->nisn) }}" class="btn btn-primary" target="_blank">Cetak</a>
+                            <a href="{{ route('rekapan.cetak', $item->nisn) }}" class="btn btn-danger me-2" target="_blank">Cetak PDF</a>
+                            <a href="{{ route('rekapan.cetak-excel', $item->nisn) }}" class="btn btn-success" target="_blank">Cetak Excel</a>
                         </div>
                     </div>
                 </div>

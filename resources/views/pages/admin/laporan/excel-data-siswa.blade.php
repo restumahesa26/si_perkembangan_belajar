@@ -32,18 +32,26 @@
     </style>
 </head>
 <body>
-    <h4 class="text-center font-weight-bold" style="font-size: 18px;">Data Siswa</h4>
     <table class="table table-bordered" id="table">
         <thead>
             <tr class="text-center">
                 <th style="vertical-align : middle; text-align:center;">No</th>
                 <th style="vertical-align : middle; text-align:center;">NISN</th>
                 <th style="vertical-align : middle; text-align:center;">Nama</th>
+                <th style="vertical-align : middle; text-align:center;">Jurusan</th>
                 <th style="vertical-align : middle; text-align:center;">Jenis Kelamin</th>
+                <th style="vertical-align : middle; text-align:center;">Tempat, Tanggal Lahir</th>
                 <th style="vertical-align : middle; text-align:center;">Nama Ayah</th>
                 <th style="vertical-align : middle; text-align:center;">Nama Ibu</th>
+                <th style="vertical-align : middle; text-align:center;">Status Keluarga</th>
+                <th style="vertical-align : middle; text-align:center;">Anak ke</th>
+                <th style="vertical-align : middle; text-align:center;">Nomor KK</th>
                 <th style="vertical-align : middle; text-align:center;">Nomor HP</th>
                 <th style="vertical-align : middle; text-align:center;">Email</th>
+                <th style="vertical-align : middle; text-align:center;">Alamat</th>
+                <th style="vertical-align : middle; text-align:center;">Sekolah Asal</th>
+                <th style="vertical-align : middle; text-align:center;">NPSN</th>
+                <th style="vertical-align : middle; text-align:center;">Alamat Sekolah Asal</th>
             </tr>
         </thead>
         <tbody>
@@ -52,15 +60,24 @@
                 <td style="vertical-align : middle; text-align:center;">{{ $loop->iteration }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->nisn }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->user->nama }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->jurusan }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->jenis_kelamin == 'L' ? 'Laki-Laki' : 'Perempuan' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->tempat_lahir }}, {{ \Carbon\Carbon::parse($item->tanggal_lahir)->translatedFormat('d F Y') }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->orang_tua->nama_ayah }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->orang_tua->nama_ibu }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->status_keluarga }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->anak_ke }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->no_kk }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->no_hp }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->user->email }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->alamat }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->sekolah_asal }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->npsn }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->alamat_sekolah_asal }}</td>
             </tr>
             @empty
             <tr class="text-center">
-                <td colspan="8">-- Data Kosong --</td>
+                <td colspan="17">-- Data Kosong --</td>
             </tr>
             @endforelse
         </tbody>

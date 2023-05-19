@@ -43,8 +43,8 @@ class NilaiRaporController extends Controller
             'keislaman' => ['required', 'numeric'],
             'bahasa_arab' => ['required', 'numeric'],
             'bahasa_inggris' => ['required', 'numeric'],
-            'ipa' => ['required', 'numeric'],
-            'ips' => ['required', 'numeric'],
+            'ipa' => ['nullable', 'numeric'],
+            'ips' => ['nullable', 'numeric'],
         ]);
 
         if ($validator->fails()) {
@@ -102,8 +102,8 @@ class NilaiRaporController extends Controller
             'keislaman' => ['required', 'numeric'],
             'bahasa_arab' => ['required', 'numeric'],
             'bahasa_inggris' => ['required', 'numeric'],
-            'ipa' => ['required', 'numeric'],
-            'ips' => ['required', 'numeric'],
+            'ipa' => ['nullable', 'numeric'],
+            'ips' => ['nullable', 'numeric'],
         ]);
 
         if ($validator->fails()) {

@@ -15,7 +15,7 @@ class Siswa extends Model
     protected $keyType = 'string';
 
     public $fillable = [
-        'nisn', 'user_id', 'orang_tua_id', 'jenis_kelamin', 'tempat_lahir', 'tanggal_lahir', 'status_keluarga', 'anak_ke', 'alamat', 'no_kk', 'no_hp', 'sekolah_asal', 'npsn', 'alamat_sekolah_asal'
+        'nisn', 'user_id', 'orang_tua_id', 'jenis_kelamin', 'tempat_lahir', 'tanggal_lahir', 'status_keluarga', 'anak_ke', 'alamat', 'no_kk', 'no_hp', 'sekolah_asal', 'npsn', 'alamat_sekolah_asal', 'jurusan'
     ];
 
     public function user()
@@ -31,6 +31,13 @@ class Siswa extends Model
     public function nilai()
     {
         return $this->hasMany(NilaiRapor::class, 'nisn', 'nisn')->orderByRaw("FIELD(jenjang , 'X', 'XI', 'XII') ASC")->orderBy('semester', 'ASC');
+    }
+
+    public function getNilai($nisn, $jenjang, $semester)
+    {
+        $item = NilaiRapor::where('nisn', $nisn)->where('jenjang', $jenjang)->where('semester', $semester)->first();
+
+        return $item;
     }
 
     public function getRataNilai($nisn, $jenjang, $semester)

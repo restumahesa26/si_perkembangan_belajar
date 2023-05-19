@@ -23,8 +23,8 @@ return new class extends Migration
             $table->decimal('keislaman', 6, 3);
             $table->decimal('bahasa_arab', 6, 3);
             $table->decimal('bahasa_inggris', 6, 3);
-            $table->decimal('ipa', 6, 3);
-            $table->decimal('ips', 6, 3);
+            $table->decimal('ipa', 6, 3)->nullable();
+            $table->decimal('ips', 6, 3)->nullable();
             $table->timestamps();
         });
     }

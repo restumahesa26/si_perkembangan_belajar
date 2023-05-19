@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers\OrangTua;
 
+use App\Exports\NilaiPerSiswaExport;
 use App\Http\Controllers\Controller;
 use App\Models\Siswa;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Maatwebsite\Excel\Facades\Excel;
 
 class PerkembanganController extends Controller
 {
@@ -33,5 +35,10 @@ class PerkembanganController extends Controller
         $item = Siswa::findOrFail($nisn);
 
         return view('pages.orang-tua.rekapan.pdf', compact('item'));
+    }
+
+    public function cetak_excel(string $nisn)
+    {
+        return Excel::download(new NilaiPerSiswaExport($nisn), 'nilai-siswa.xlsx');
     }
 }

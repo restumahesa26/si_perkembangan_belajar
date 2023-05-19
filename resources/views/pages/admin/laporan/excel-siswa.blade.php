@@ -32,28 +32,12 @@
     </style>
 </head>
 <body>
-    <h4 class="text-center font-weight-bold" style="font-size: 18px;">Rekapan Absen</h4>
-    <div class="row">
-        <div class="col-1">
-            <h5 class="font-weight-bold">Nama</h5>
-        </div>
-        <div class="col-11">
-            <h5 class="font-weight-bold">: {{ $item->user->nama }}</h5>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-1">
-            <h5 class="font-weight-bold">NISN</h5>
-        </div>
-        <div class="col-11">
-            <h5 class="font-weight-bold">: {{ $item->nisn }}</h5>
-        </div>
-    </div>
     <div class="table-responsive">
         <table class="table table-bordered" id="table">
             <thead>
                 <tr class="text-center">
-                    <th rowspan="2" style="vertical-align : middle; text-align:center;">Kelas & Semester</th>
+                    <th rowspan="2" style="vertical-align : middle; text-align:center;">Nama (NISN)</th>
+                    <th rowspan="2" style="vertical-align : middle; text-align:center;">Kelas dan Semester</th>
                     <th colspan="6" style="vertical-align : middle; text-align:center;">Nilai</th>
                 </tr>
                 <tr class="text-center">
@@ -68,6 +52,7 @@
             <tbody>
                 @forelse ($item->nilai as $item2)
                 <tr class="text-center">
+                    <td style="vertical-align : middle; text-align:center;">{{ $item->user->nama }} ({{ $item->nisn }})</td>
                     <td style="vertical-align : middle; text-align:center;">Kelas {{ $item2->jenjang }} {{ $item2->kelas }} Semester {{ $item2->semester }}</td>
                     <td style="vertical-align : middle; text-align:center;">{{ $item2->matematika }}</td>
                     <td style="vertical-align : middle; text-align:center;">{{ $item2->keislaman }}</td>

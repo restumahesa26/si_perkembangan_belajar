@@ -41,6 +41,7 @@ class SiswaController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'nama' => ['required', 'string', 'max:255'],
+            'jurusan' => ['required', 'string', 'max:255'],
             'username' => ['required', 'string', 'max:255', 'unique:users'],
             'email' => ['required', 'string', 'max:255', 'email', 'unique:users'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
@@ -75,6 +76,7 @@ class SiswaController extends Controller
             'user_id' => $user->id,
             'orang_tua_id' => $request->orang_tua_id,
             'nisn' => $request->nisn,
+            'jurusan' => $request->jurusan,
             'jenis_kelamin' => $request->jenis_kelamin,
             'alamat' => $request->alamat,
             'tempat_lahir' => $request->tempat_lahir,
@@ -119,6 +121,7 @@ class SiswaController extends Controller
         $validator = Validator::make($request->all(), [
             'jenis_kelamin' => ['required', 'in:L,P'],
             'tempat_lahir' => ['required', 'string', 'max:255'],
+            'jurusan' => ['required', 'string', 'max:255'],
             'tanggal_lahir' => ['required', 'date'],
             'status_keluarga' => ['required', 'string', 'max:255'],
             'alamat' => ['required', 'string', 'max:255'],
@@ -193,6 +196,7 @@ class SiswaController extends Controller
         $item->update([
             'orang_tua_id' => $request->orang_tua_id,
             'nisn' => $request->nisn,
+            'jurusan' => $request->jurusan,
             'jenis_kelamin' => $request->jenis_kelamin,
             'alamat' => $request->alamat,
             'tempat_lahir' => $request->tempat_lahir,
