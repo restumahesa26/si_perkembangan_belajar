@@ -28,8 +28,8 @@
                                 <label for="jurusan">Jurusan</label><sup class="text-danger">(*)</sup>
                                 <select name="jurusan" id="jurusan" class="jurusan w-100" required>
                                     <option value=""></option>
-                                    <option value="IPA" @if(old('jurusan') == 'IPA') selected @endif>IPA</option>
-                                    <option value="IPS" @if(old('jurusan') == 'IPS') selected @endif>IPS</option>
+                                    <option value="IPA" @if(old('jurusan', $item->jurusan) == 'IPA') selected @endif>IPA</option>
+                                    <option value="IPS" @if(old('jurusan', $item->jurusan) == 'IPS') selected @endif>IPS</option>
                                 </select>
                                 @error('jurusan')
                                     <span class="invalid-feedback" role="alert">

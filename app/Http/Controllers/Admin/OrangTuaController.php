@@ -73,7 +73,7 @@ class OrangTuaController extends Controller
             'username' => $request->username,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'role' => 'Siswa'
+            'role' => 'Orang Tua'
         ]);
 
         OrangTua::create([

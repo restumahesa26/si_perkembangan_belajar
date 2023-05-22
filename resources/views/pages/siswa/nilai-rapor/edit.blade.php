@@ -111,6 +111,7 @@
                                 @enderror
                             </div>
                         </div>
+                        @if (Auth::user()->siswa->jurusan == 'IPA')
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label for="ipa">Nilai IPA</label><sup class="text-danger">(*)</sup>
@@ -122,6 +123,8 @@
                                 @enderror
                             </div>
                         </div>
+                        @endif
+                        @if (Auth::user()->siswa->jurusan == 'IPS')
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label for="ips">Nilai IPS</label><sup class="text-danger">(*)</sup>
@@ -133,6 +136,7 @@
                                 @enderror
                             </div>
                         </div>
+                        @endif
                     </div>
                     <div class="d-flex justify-content-start mt-3">
                         <a href="{{ route('data-siswa.index') }}" class="btn btn-secondary me-2">Kembali</a>

@@ -23,7 +23,7 @@ class DashboardController extends Controller
             $item = Siswa::where('user_id', Auth::user()->id)->first();
 
             return view('pages.dashboard-siswa', compact('item'));
-        }else {
+        }elseif (Auth::user()->role == 'Orang Tua') {
             $items = Siswa::where('orang_tua_id', Auth::user()->orang_tua->id)->get();
 
             return view('pages.dashboard-orang-tua', compact('items'));

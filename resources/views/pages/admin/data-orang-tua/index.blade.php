@@ -82,7 +82,7 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="nik_ayah">NIK Ayah</label><sup class="text-danger">(*)</sup>
-                                                <input type="text" name="nik_ayah" class="form-control @error('nik_ayah') is-invalid @enderror" id="nik_ayah" placeholder="NIK Ayah" value="{{ old('nik_ayah') }}" required>
+                                                <input type="number" name="nik_ayah" class="form-control @error('nik_ayah') is-invalid @enderror" id="nik_ayah" placeholder="NIK Ayah" value="{{ old('nik_ayah') }}" required>
                                                 @error('nik_ayah')
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $message }}</strong>
@@ -93,7 +93,7 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="nik_ibu">NIK Ibu</label><sup class="text-danger">(*)</sup>
-                                                <input type="text" name="nik_ibu" class="form-control @error('nik_ibu') is-invalid @enderror" id="nik_ibu" placeholder="NIK Ibu" value="{{ old('nik_ibu') }}" required>
+                                                <input type="number" name="nik_ibu" class="form-control @error('nik_ibu') is-invalid @enderror" id="nik_ibu" placeholder="NIK Ibu" value="{{ old('nik_ibu') }}" required>
                                                 @error('nik_ibu')
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $message }}</strong>
@@ -104,7 +104,7 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="nik_wali">NIK Wali</label>
-                                                <input type="text" name="nik_wali" class="form-control @error('nik_wali') is-invalid @enderror" id="nik_wali" placeholder="NIK Wali" value="{{ old('nik_wali') }}">
+                                                <input type="number" name="nik_wali" class="form-control @error('nik_wali') is-invalid @enderror" id="nik_wali" placeholder="NIK Wali" value="{{ old('nik_wali') }}">
                                                 @error('nik_wali')
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $message }}</strong>
@@ -257,7 +257,7 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="no_hp_ayah">Nomor HP Ayah</label><sup class="text-danger">(*)</sup>
-                                                <input type="text" name="no_hp_ayah" class="form-control @error('no_hp_ayah') is-invalid @enderror" id="no_hp_ayah" placeholder="Nomor HP Ayah" value="{{ old('no_hp_ayah') }}" required>
+                                                <input type="number" name="no_hp_ayah" class="form-control @error('no_hp_ayah') is-invalid @enderror" id="no_hp_ayah" placeholder="Nomor HP Ayah" value="{{ old('no_hp_ayah') }}" required>
                                                 @error('no_hp_ayah')
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $message }}</strong>
@@ -268,7 +268,7 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="no_hp_ibu">Nomor HP Ibu</label><sup class="text-danger">(*)</sup>
-                                                <input type="text" name="no_hp_ibu" class="form-control @error('no_hp_ibu') is-invalid @enderror" id="no_hp_ibu" placeholder="Nomor HP Ibu" value="{{ old('no_hp_ibu') }}" required>
+                                                <input type="number" name="no_hp_ibu" class="form-control @error('no_hp_ibu') is-invalid @enderror" id="no_hp_ibu" placeholder="Nomor HP Ibu" value="{{ old('no_hp_ibu') }}" required>
                                                 @error('no_hp_ibu')
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $message }}</strong>
@@ -279,7 +279,7 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="no_hp_wali">Nomor HP Wali</label>
-                                                <input type="text" name="no_hp_wali" class="form-control @error('no_hp_wali') is-invalid @enderror" id="no_hp_wali" placeholder="Nomor HP Wali" value="{{ old('no_hp_wali') }}">
+                                                <input type="number" name="no_hp_wali" class="form-control @error('no_hp_wali') is-invalid @enderror" id="no_hp_wali" placeholder="Nomor HP Wali" value="{{ old('no_hp_wali') }}">
                                                 @error('no_hp_wali')
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $message }}</strong>
@@ -292,7 +292,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="penghasilan">Penghasilan</label>
-                                                <input type="text" name="penghasilan" class="form-control @error('penghasilan') is-invalid @enderror" id="penghasilan" placeholder="Penghasilan" value="{{ old('penghasilan') }}">
+                                                <input type="number" name="penghasilan" class="form-control @error('penghasilan') is-invalid @enderror" id="penghasilan" placeholder="Penghasilan" value="{{ old('penghasilan') }}">
                                                 @error('penghasilan')
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $message }}</strong>
@@ -414,6 +414,7 @@
 
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    @if ($items->count() > 0)
     <script>
         $(document).ready(function () {
             $('#table').DataTable({
@@ -421,4 +422,5 @@
             });
         });
     </script>
+    @endif
 @endpush
