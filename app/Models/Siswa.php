@@ -15,7 +15,7 @@ class Siswa extends Model
     protected $keyType = 'string';
 
     public $fillable = [
-        'nisn', 'user_id', 'orang_tua_id', 'jenis_kelamin', 'tempat_lahir', 'tanggal_lahir', 'status_keluarga', 'anak_ke', 'alamat', 'no_kk', 'no_hp', 'sekolah_asal', 'npsn', 'alamat_sekolah_asal', 'jurusan'
+        'nisn', 'user_id', 'orang_tua_id', 'jenis_kelamin', 'tempat_lahir', 'tanggal_lahir', 'status_keluarga', 'anak_ke', 'alamat', 'no_kk', 'no_hp', 'sekolah_asal', 'npsn', 'alamat_sekolah_asal', 'jurusan', 'minat_jurusan', 'hobi', 'cita_cita', 'target_prestasi'
     ];
 
     public function user()

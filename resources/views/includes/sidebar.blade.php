@@ -54,11 +54,31 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="{{ route('laporan.index') }}" aria-expanded="false">
+                    <a class="sidebar-link @if(Route::is('laporan.')) active @endif" href="{{ route('admin-perkembangan.index') }}" href="{{ route('laporan.index') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-file-text"></i>
                         </span>
                         <span class="hide-menu">Laporan</span>
+                    </a>
+                </li>
+                <li class="nav-small-cap">
+                    <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                    <span class="hide-menu">Prestasi</span>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link @if(Route::is('prestasi-akademik.*')) active @endif" href="{{ route('prestasi-akademik.index') }}" aria-expanded="false">
+                        <span>
+                            <i class="ti ti-article"></i>
+                        </span>
+                        <span class="hide-menu">Prestasi Akademik</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link @if(Route::is('prestasi-non-akademik.*')) active @endif" href="{{ route('prestasi-non-akademik.index') }}" aria-expanded="false">
+                        <span>
+                            <i class="ti ti-artboard"></i>
+                        </span>
+                        <span class="hide-menu">Prestasi Non Akademik</span>
                     </a>
                 </li>
                 @elseif (Auth::user()->role == 'Orang Tua')

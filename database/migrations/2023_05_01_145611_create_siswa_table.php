@@ -27,6 +27,10 @@ return new class extends Migration
             $table->string('sekolah_asal')->nullable();
             $table->string('npsn')->nullable();
             $table->string('alamat_sekolah_asal')->nullable();
+            $table->string('minat_jurusan')->nullable();
+            $table->string('hobi')->nullable();
+            $table->string('cita_cita')->nullable();
+            $table->string('target_prestasi')->nullable();
             $table->timestamps();
         });
     }

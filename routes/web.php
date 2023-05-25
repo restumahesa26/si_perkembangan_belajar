@@ -4,6 +4,8 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\LaporanController;
 use App\Http\Controllers\Admin\OrangTuaController;
 use App\Http\Controllers\Admin\PerkembanganController as AdminPerkembanganController;
+use App\Http\Controllers\Admin\PrestasiAkademikController;
+use App\Http\Controllers\Admin\PrestasiNonAkademikController;
 use App\Http\Controllers\Admin\SiswaController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\OrangTua\PerkembanganController;
@@ -31,6 +33,9 @@ Route::get('/', function () {
 Route::middleware('auth')->group(function () {
     Route::resource('data-admin', AdminController::class)->middleware('role:Admin');
     Route::resource('data-orang-tua', OrangTuaController::class)->middleware('role:Admin');
+    Route::resource('data-siswa', SiswaController::class)->middleware('role:Admin');
+    Route::resource('prestasi-akademik', PrestasiAkademikController::class)->middleware('role:Admin');
+    Route::resource('prestasi-non-akademik', PrestasiNonAkademikController::class)->middleware('role:Admin');
     Route::resource('data-siswa', SiswaController::class)->middleware('role:Admin');
     Route::resource('data-nilai-rapor', NilaiRaporController::class)->middleware('role:Siswa');
     Route::put('/siswa/update-profile', [SiswaProfileController::class, 'update'])->name('siswa.update-profile')->middleware('role:Siswa');
