@@ -22,27 +22,6 @@ class LaporanController extends Controller
         return view('pages.admin.laporan.index', compact('items'));
     }
 
-    public function cetak_siswa(Request $request)
-    {
-        $item = Siswa::findOrFail($request->siswa);
-
-        return view('pages.admin.laporan.pdf-siswa', compact('item'));
-    }
-
-    public function cetak_jurusan(Request $request)
-    {
-        $items = Siswa::where('jurusan', $request->jurusan)->get();
-
-        return view('pages.admin.laporan.pdf-jurusan', compact('items'));
-    }
-
-    public function cetak_semua()
-    {
-        $items = Siswa::join('users', 'users.id', 'siswa.user_id')->orderBy('users.nama', 'ASC')->get();
-
-        return view('pages.admin.laporan.pdf-semua', compact('items'));
-    }
-
     public function cetak_data_siswa()
     {
         $items = Siswa::join('users', 'users.id', 'siswa.user_id')->orderBy('users.nama', 'ASC')->get();
@@ -60,11 +39,6 @@ class LaporanController extends Controller
     public function cetak_siswa_excel(Request $request)
     {
         return Excel::download(new NilaiPerSiswaExport($request->siswa), 'nilai-siswa.xlsx');
-    }
-
-    public function cetak_jurusan_excel(Request $request)
-    {
-        return Excel::download(new NilaiPerJurusanExport($request->jurusan), 'nilai-siswa.xlsx');
     }
 
     public function cetak_semua_excel()
