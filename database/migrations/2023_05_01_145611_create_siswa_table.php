@@ -16,7 +16,6 @@ return new class extends Migration
             $table->foreignId('user_id')->references('id')->on('users');
             $table->foreignId('orang_tua_id')->references('id')->on('orang_tua');
             $table->enum('jenis_kelamin', ['L','P']);
-            $table->string('jurusan');
             $table->string('tempat_lahir');
             $table->date('tanggal_lahir');
             $table->string('status_keluarga');

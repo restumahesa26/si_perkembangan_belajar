@@ -37,50 +37,158 @@
             <tr class="text-center">
                 <th rowspan="2" style="vertical-align : middle; text-align:center;">Nama</th>
                 <th rowspan="2" style="vertical-align : middle; text-align:center;">Jurusan</th>
-                <th colspan="6"style="vertical-align : middle; text-align:center;">Nilai Kelas X Semester 1</th>
-                <th colspan="6"style="vertical-align : middle; text-align:center;">Nilai Kelas X Semester 2</th>
-                <th colspan="6"style="vertical-align : middle; text-align:center;">Nilai Kelas XI Semester 1</th>
-                <th colspan="6"style="vertical-align : middle; text-align:center;">Nilai Kelas XI Semester 2</th>
-                <th colspan="6"style="vertical-align : middle; text-align:center;">Nilai Kelas XII Semester 1</th>
-                <th colspan="6"style="vertical-align : middle; text-align:center;">Nilai Kelas XII Semester 2</th>
+                <th colspan="6" style="vertical-align : middle; text-align:center;">Nilai Kelas X Semester 1</th>
+                <th colspan="6" style="vertical-align : middle; text-align:center;">Nilai Kelas X Semester 2</th>
+                <th colspan="6" style="vertical-align : middle; text-align:center;">Nilai Kelas XI Semester 1</th>
+                <th colspan="6" style="vertical-align : middle; text-align:center;">Nilai Kelas XI Semester 2</th>
+                <th colspan="6" style="vertical-align : middle; text-align:center;">Nilai Kelas XII Semester 1</th>
+                <th colspan="6" style="vertical-align : middle; text-align:center;">Nilai Kelas XII Semester 2</th>
             </tr>
             <tr class="text-center">
+                <th style="vertical-align : middle; text-align:center;">Al-Qur'an Hadits</th>
+                <th style="vertical-align : middle; text-align:center;">Akidah Akhlak</th>
+                <th style="vertical-align : middle; text-align:center;">Fikih</th>
+                <th style="vertical-align : middle; text-align:center;">SKI</th>
+                <th style="vertical-align : middle; text-align:center;">B. Arab</th>
+                <th style="vertical-align : middle; text-align:center;">P. Pancasila</th>
+                <th style="vertical-align : middle; text-align:center;">B. Indonesia</th>
                 <th style="vertical-align : middle; text-align:center;">Matematika</th>
-                <th style="vertical-align : middle; text-align:center;">Keislaman</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Arab</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Inggris</th>
                 <th style="vertical-align : middle; text-align:center;">IPA</th>
                 <th style="vertical-align : middle; text-align:center;">IPS</th>
+                <th style="vertical-align : middle; text-align:center;">B.Inggris</th>
+                <th style="vertical-align : middle; text-align:center;">Penjaskes</th>
+                <th style="vertical-align : middle; text-align:center;">Sejarah</th>
+                <th style="vertical-align : middle; text-align:center;">KWU</th>
+                <th style="vertical-align : middle; text-align:center;">Karya Ilmiah</th>
+                <th style="vertical-align : middle; text-align:center;">Tahfidz</th>
+                <th style="vertical-align : middle; text-align:center;">Al-Qur'an Hadits</th>
+                <th style="vertical-align : middle; text-align:center;">Akidah Akhlak</th>
+                <th style="vertical-align : middle; text-align:center;">Fikih</th>
+                <th style="vertical-align : middle; text-align:center;">SKI</th>
+                <th style="vertical-align : middle; text-align:center;">B. Arab</th>
+                <th style="vertical-align : middle; text-align:center;">P. Pancasila</th>
+                <th style="vertical-align : middle; text-align:center;">B. Indonesia</th>
                 <th style="vertical-align : middle; text-align:center;">Matematika</th>
-                <th style="vertical-align : middle; text-align:center;">Keislaman</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Arab</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Inggris</th>
                 <th style="vertical-align : middle; text-align:center;">IPA</th>
                 <th style="vertical-align : middle; text-align:center;">IPS</th>
+                <th style="vertical-align : middle; text-align:center;">B.Inggris</th>
+                <th style="vertical-align : middle; text-align:center;">Penjaskes</th>
+                <th style="vertical-align : middle; text-align:center;">Sejarah</th>
+                <th style="vertical-align : middle; text-align:center;">KWU</th>
+                <th style="vertical-align : middle; text-align:center;">Karya Ilmiah</th>
+                <th style="vertical-align : middle; text-align:center;">Tahfidz</th>
+                <th style="vertical-align : middle; text-align:center;">Al-Qur'an Hadits</th>
+                <th style="vertical-align : middle; text-align:center;">Akidah Akhlak</th>
+                <th style="vertical-align : middle; text-align:center;">Fikih</th>
+                <th style="vertical-align : middle; text-align:center;">SKI</th>
+                <th style="vertical-align : middle; text-align:center;">B. Arab</th>
+                <th style="vertical-align : middle; text-align:center;">P. Pancasila</th>
+                <th style="vertical-align : middle; text-align:center;">B. Indonesia</th>
                 <th style="vertical-align : middle; text-align:center;">Matematika</th>
-                <th style="vertical-align : middle; text-align:center;">Keislaman</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Arab</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Inggris</th>
                 <th style="vertical-align : middle; text-align:center;">IPA</th>
                 <th style="vertical-align : middle; text-align:center;">IPS</th>
+                <th style="vertical-align : middle; text-align:center;">B.Inggris</th>
+                <th style="vertical-align : middle; text-align:center;">Penjaskes</th>
+                <th style="vertical-align : middle; text-align:center;">Sejarah</th>
+                <th style="vertical-align : middle; text-align:center;">KWU</th>
+                <th style="vertical-align : middle; text-align:center;">Karya Ilmiah</th>
+                <th style="vertical-align : middle; text-align:center;">Tahfidz</th>
+                <th style="vertical-align : middle; text-align:center;">Matematika Lanjutan</th>
+                <th style="vertical-align : middle; text-align:center;">Biologi</th>
+                <th style="vertical-align : middle; text-align:center;">Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia</th>
+                <th style="vertical-align : middle; text-align:center;">Geografi</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia Peminatan</th>
+                <th style="vertical-align : middle; text-align:center;">Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Informatika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Riset</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Biologi</th>
+                <th style="vertical-align : middle; text-align:center;">Al-Qur'an Hadits</th>
+                <th style="vertical-align : middle; text-align:center;">Akidah Akhlak</th>
+                <th style="vertical-align : middle; text-align:center;">Fikih</th>
+                <th style="vertical-align : middle; text-align:center;">SKI</th>
+                <th style="vertical-align : middle; text-align:center;">B. Arab</th>
+                <th style="vertical-align : middle; text-align:center;">P. Pancasila</th>
+                <th style="vertical-align : middle; text-align:center;">B. Indonesia</th>
                 <th style="vertical-align : middle; text-align:center;">Matematika</th>
-                <th style="vertical-align : middle; text-align:center;">Keislaman</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Arab</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Inggris</th>
                 <th style="vertical-align : middle; text-align:center;">IPA</th>
                 <th style="vertical-align : middle; text-align:center;">IPS</th>
+                <th style="vertical-align : middle; text-align:center;">B.Inggris</th>
+                <th style="vertical-align : middle; text-align:center;">Penjaskes</th>
+                <th style="vertical-align : middle; text-align:center;">Sejarah</th>
+                <th style="vertical-align : middle; text-align:center;">KWU</th>
+                <th style="vertical-align : middle; text-align:center;">Karya Ilmiah</th>
+                <th style="vertical-align : middle; text-align:center;">Tahfidz</th>
+                <th style="vertical-align : middle; text-align:center;">Matematika Lanjutan</th>
+                <th style="vertical-align : middle; text-align:center;">Biologi</th>
+                <th style="vertical-align : middle; text-align:center;">Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia</th>
+                <th style="vertical-align : middle; text-align:center;">Geografi</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia Peminatan</th>
+                <th style="vertical-align : middle; text-align:center;">Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Informatika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Riset</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Biologi</th>
+                <th style="vertical-align : middle; text-align:center;">Al-Qur'an Hadits</th>
+                <th style="vertical-align : middle; text-align:center;">Akidah Akhlak</th>
+                <th style="vertical-align : middle; text-align:center;">Fikih</th>
+                <th style="vertical-align : middle; text-align:center;">SKI</th>
+                <th style="vertical-align : middle; text-align:center;">B. Arab</th>
+                <th style="vertical-align : middle; text-align:center;">P. Pancasila</th>
+                <th style="vertical-align : middle; text-align:center;">B. Indonesia</th>
                 <th style="vertical-align : middle; text-align:center;">Matematika</th>
-                <th style="vertical-align : middle; text-align:center;">Keislaman</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Arab</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Inggris</th>
                 <th style="vertical-align : middle; text-align:center;">IPA</th>
                 <th style="vertical-align : middle; text-align:center;">IPS</th>
+                <th style="vertical-align : middle; text-align:center;">B.Inggris</th>
+                <th style="vertical-align : middle; text-align:center;">Penjaskes</th>
+                <th style="vertical-align : middle; text-align:center;">Sejarah</th>
+                <th style="vertical-align : middle; text-align:center;">KWU</th>
+                <th style="vertical-align : middle; text-align:center;">Karya Ilmiah</th>
+                <th style="vertical-align : middle; text-align:center;">Tahfidz</th>
+                <th style="vertical-align : middle; text-align:center;">Matematika Lanjutan</th>
+                <th style="vertical-align : middle; text-align:center;">Biologi</th>
+                <th style="vertical-align : middle; text-align:center;">Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia</th>
+                <th style="vertical-align : middle; text-align:center;">Geografi</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia Peminatan</th>
+                <th style="vertical-align : middle; text-align:center;">Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Informatika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Riset</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Biologi</th>
+                <th style="vertical-align : middle; text-align:center;">Al-Qur'an Hadits</th>
+                <th style="vertical-align : middle; text-align:center;">Akidah Akhlak</th>
+                <th style="vertical-align : middle; text-align:center;">Fikih</th>
+                <th style="vertical-align : middle; text-align:center;">SKI</th>
+                <th style="vertical-align : middle; text-align:center;">B. Arab</th>
+                <th style="vertical-align : middle; text-align:center;">P. Pancasila</th>
+                <th style="vertical-align : middle; text-align:center;">B. Indonesia</th>
                 <th style="vertical-align : middle; text-align:center;">Matematika</th>
-                <th style="vertical-align : middle; text-align:center;">Keislaman</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Arab</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Inggris</th>
                 <th style="vertical-align : middle; text-align:center;">IPA</th>
                 <th style="vertical-align : middle; text-align:center;">IPS</th>
+                <th style="vertical-align : middle; text-align:center;">B.Inggris</th>
+                <th style="vertical-align : middle; text-align:center;">Penjaskes</th>
+                <th style="vertical-align : middle; text-align:center;">Sejarah</th>
+                <th style="vertical-align : middle; text-align:center;">KWU</th>
+                <th style="vertical-align : middle; text-align:center;">Karya Ilmiah</th>
+                <th style="vertical-align : middle; text-align:center;">Tahfidz</th>
+                <th style="vertical-align : middle; text-align:center;">Matematika Lanjutan</th>
+                <th style="vertical-align : middle; text-align:center;">Biologi</th>
+                <th style="vertical-align : middle; text-align:center;">Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia</th>
+                <th style="vertical-align : middle; text-align:center;">Geografi</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia Peminatan</th>
+                <th style="vertical-align : middle; text-align:center;">Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Informatika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Riset</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Biologi</th>
             </tr>
         </thead>
         <tbody>

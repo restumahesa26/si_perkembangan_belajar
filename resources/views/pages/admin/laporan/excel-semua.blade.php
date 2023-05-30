@@ -36,94 +36,292 @@
         <thead>
             <tr class="text-center">
                 <th rowspan="2" style="vertical-align : middle; text-align:center;">Nama</th>
-                <th rowspan="2" style="vertical-align : middle; text-align:center;">Jurusan</th>
-                <th colspan="6"style="vertical-align : middle; text-align:center;">Nilai Kelas X Semester 1</th>
-                <th colspan="6"style="vertical-align : middle; text-align:center;">Nilai Kelas X Semester 2</th>
-                <th colspan="6"style="vertical-align : middle; text-align:center;">Nilai Kelas XI Semester 1</th>
-                <th colspan="6"style="vertical-align : middle; text-align:center;">Nilai Kelas XI Semester 2</th>
-                <th colspan="6"style="vertical-align : middle; text-align:center;">Nilai Kelas XII Semester 1</th>
-                <th colspan="6"style="vertical-align : middle; text-align:center;">Nilai Kelas XII Semester 2</th>
+                <th colspan="16"style="vertical-align : middle; text-align:center;">Nilai Kelas X Semester 1</th>
+                <th colspan="16"style="vertical-align : middle; text-align:center;">Nilai Kelas X Semester 2</th>
+                <th colspan="26"style="vertical-align : middle; text-align:center;">Nilai Kelas XI Semester 1</th>
+                <th colspan="26"style="vertical-align : middle; text-align:center;">Nilai Kelas XI Semester 2</th>
+                <th colspan="26"style="vertical-align : middle; text-align:center;">Nilai Kelas XII Semester 1</th>
+                <th colspan="26"style="vertical-align : middle; text-align:center;">Nilai Kelas XII Semester 2</th>
             </tr>
             <tr class="text-center">
+                <th style="vertical-align : middle; text-align:center;">Al-Qur'an Hadits</th>
+                <th style="vertical-align : middle; text-align:center;">Akidah Akhlak</th>
+                <th style="vertical-align : middle; text-align:center;">Fikih</th>
+                <th style="vertical-align : middle; text-align:center;">SKI</th>
+                <th style="vertical-align : middle; text-align:center;">B. Arab</th>
+                <th style="vertical-align : middle; text-align:center;">P. Pancasila</th>
+                <th style="vertical-align : middle; text-align:center;">B. Indonesia</th>
                 <th style="vertical-align : middle; text-align:center;">Matematika</th>
-                <th style="vertical-align : middle; text-align:center;">Keislaman</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Arab</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Inggris</th>
                 <th style="vertical-align : middle; text-align:center;">IPA</th>
                 <th style="vertical-align : middle; text-align:center;">IPS</th>
+                <th style="vertical-align : middle; text-align:center;">B.Inggris</th>
+                <th style="vertical-align : middle; text-align:center;">Penjaskes</th>
+                <th style="vertical-align : middle; text-align:center;">Sejarah</th>
+                <th style="vertical-align : middle; text-align:center;">KWU</th>
+                <th style="vertical-align : middle; text-align:center;">Karya Ilmiah</th>
+                <th style="vertical-align : middle; text-align:center;">Tahfidz</th>
+                <th style="vertical-align : middle; text-align:center;">Al-Qur'an Hadits</th>
+                <th style="vertical-align : middle; text-align:center;">Akidah Akhlak</th>
+                <th style="vertical-align : middle; text-align:center;">Fikih</th>
+                <th style="vertical-align : middle; text-align:center;">SKI</th>
+                <th style="vertical-align : middle; text-align:center;">B. Arab</th>
+                <th style="vertical-align : middle; text-align:center;">P. Pancasila</th>
+                <th style="vertical-align : middle; text-align:center;">B. Indonesia</th>
                 <th style="vertical-align : middle; text-align:center;">Matematika</th>
-                <th style="vertical-align : middle; text-align:center;">Keislaman</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Arab</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Inggris</th>
                 <th style="vertical-align : middle; text-align:center;">IPA</th>
                 <th style="vertical-align : middle; text-align:center;">IPS</th>
+                <th style="vertical-align : middle; text-align:center;">B.Inggris</th>
+                <th style="vertical-align : middle; text-align:center;">Penjaskes</th>
+                <th style="vertical-align : middle; text-align:center;">Sejarah</th>
+                <th style="vertical-align : middle; text-align:center;">KWU</th>
+                <th style="vertical-align : middle; text-align:center;">Karya Ilmiah</th>
+                <th style="vertical-align : middle; text-align:center;">Tahfidz</th>
+                <th style="vertical-align : middle; text-align:center;">Al-Qur'an Hadits</th>
+                <th style="vertical-align : middle; text-align:center;">Akidah Akhlak</th>
+                <th style="vertical-align : middle; text-align:center;">Fikih</th>
+                <th style="vertical-align : middle; text-align:center;">SKI</th>
+                <th style="vertical-align : middle; text-align:center;">B. Arab</th>
+                <th style="vertical-align : middle; text-align:center;">P. Pancasila</th>
+                <th style="vertical-align : middle; text-align:center;">B. Indonesia</th>
                 <th style="vertical-align : middle; text-align:center;">Matematika</th>
-                <th style="vertical-align : middle; text-align:center;">Keislaman</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Arab</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Inggris</th>
-                <th style="vertical-align : middle; text-align:center;">IPA</th>
-                <th style="vertical-align : middle; text-align:center;">IPS</th>
+                <th style="vertical-align : middle; text-align:center;">B.Inggris</th>
+                <th style="vertical-align : middle; text-align:center;">Penjaskes</th>
+                <th style="vertical-align : middle; text-align:center;">Sejarah</th>
+                <th style="vertical-align : middle; text-align:center;">KWU</th>
+                <th style="vertical-align : middle; text-align:center;">Karya Ilmiah</th>
+                <th style="vertical-align : middle; text-align:center;">Tahfidz</th>
+                <th style="vertical-align : middle; text-align:center;">Matematika Lanjutan</th>
+                <th style="vertical-align : middle; text-align:center;">Biologi</th>
+                <th style="vertical-align : middle; text-align:center;">Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia</th>
+                <th style="vertical-align : middle; text-align:center;">Geografi</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia Peminatan</th>
+                <th style="vertical-align : middle; text-align:center;">Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Informatika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Riset</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Biologi</th>
+                <th style="vertical-align : middle; text-align:center;">Al-Qur'an Hadits</th>
+                <th style="vertical-align : middle; text-align:center;">Akidah Akhlak</th>
+                <th style="vertical-align : middle; text-align:center;">Fikih</th>
+                <th style="vertical-align : middle; text-align:center;">SKI</th>
+                <th style="vertical-align : middle; text-align:center;">B. Arab</th>
+                <th style="vertical-align : middle; text-align:center;">P. Pancasila</th>
+                <th style="vertical-align : middle; text-align:center;">B. Indonesia</th>
                 <th style="vertical-align : middle; text-align:center;">Matematika</th>
-                <th style="vertical-align : middle; text-align:center;">Keislaman</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Arab</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Inggris</th>
-                <th style="vertical-align : middle; text-align:center;">IPA</th>
-                <th style="vertical-align : middle; text-align:center;">IPS</th>
+                <th style="vertical-align : middle; text-align:center;">B.Inggris</th>
+                <th style="vertical-align : middle; text-align:center;">Penjaskes</th>
+                <th style="vertical-align : middle; text-align:center;">Sejarah</th>
+                <th style="vertical-align : middle; text-align:center;">KWU</th>
+                <th style="vertical-align : middle; text-align:center;">Karya Ilmiah</th>
+                <th style="vertical-align : middle; text-align:center;">Tahfidz</th>
+                <th style="vertical-align : middle; text-align:center;">Matematika Lanjutan</th>
+                <th style="vertical-align : middle; text-align:center;">Biologi</th>
+                <th style="vertical-align : middle; text-align:center;">Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia</th>
+                <th style="vertical-align : middle; text-align:center;">Geografi</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia Peminatan</th>
+                <th style="vertical-align : middle; text-align:center;">Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Informatika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Riset</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Biologi</th>
+                <th style="vertical-align : middle; text-align:center;">Al-Qur'an Hadits</th>
+                <th style="vertical-align : middle; text-align:center;">Akidah Akhlak</th>
+                <th style="vertical-align : middle; text-align:center;">Fikih</th>
+                <th style="vertical-align : middle; text-align:center;">SKI</th>
+                <th style="vertical-align : middle; text-align:center;">B. Arab</th>
+                <th style="vertical-align : middle; text-align:center;">P. Pancasila</th>
+                <th style="vertical-align : middle; text-align:center;">B. Indonesia</th>
                 <th style="vertical-align : middle; text-align:center;">Matematika</th>
-                <th style="vertical-align : middle; text-align:center;">Keislaman</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Arab</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Inggris</th>
-                <th style="vertical-align : middle; text-align:center;">IPA</th>
-                <th style="vertical-align : middle; text-align:center;">IPS</th>
+                <th style="vertical-align : middle; text-align:center;">B.Inggris</th>
+                <th style="vertical-align : middle; text-align:center;">Penjaskes</th>
+                <th style="vertical-align : middle; text-align:center;">Sejarah</th>
+                <th style="vertical-align : middle; text-align:center;">KWU</th>
+                <th style="vertical-align : middle; text-align:center;">Karya Ilmiah</th>
+                <th style="vertical-align : middle; text-align:center;">Tahfidz</th>
+                <th style="vertical-align : middle; text-align:center;">Matematika Lanjutan</th>
+                <th style="vertical-align : middle; text-align:center;">Biologi</th>
+                <th style="vertical-align : middle; text-align:center;">Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia</th>
+                <th style="vertical-align : middle; text-align:center;">Geografi</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia Peminatan</th>
+                <th style="vertical-align : middle; text-align:center;">Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Informatika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Riset</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Biologi</th>
+                <th style="vertical-align : middle; text-align:center;">Al-Qur'an Hadits</th>
+                <th style="vertical-align : middle; text-align:center;">Akidah Akhlak</th>
+                <th style="vertical-align : middle; text-align:center;">Fikih</th>
+                <th style="vertical-align : middle; text-align:center;">SKI</th>
+                <th style="vertical-align : middle; text-align:center;">B. Arab</th>
+                <th style="vertical-align : middle; text-align:center;">P. Pancasila</th>
+                <th style="vertical-align : middle; text-align:center;">B. Indonesia</th>
                 <th style="vertical-align : middle; text-align:center;">Matematika</th>
-                <th style="vertical-align : middle; text-align:center;">Keislaman</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Arab</th>
-                <th style="vertical-align : middle; text-align:center;">Bahasa Inggris</th>
-                <th style="vertical-align : middle; text-align:center;">IPA</th>
-                <th style="vertical-align : middle; text-align:center;">IPS</th>
+                <th style="vertical-align : middle; text-align:center;">B.Inggris</th>
+                <th style="vertical-align : middle; text-align:center;">Penjaskes</th>
+                <th style="vertical-align : middle; text-align:center;">Sejarah</th>
+                <th style="vertical-align : middle; text-align:center;">KWU</th>
+                <th style="vertical-align : middle; text-align:center;">Karya Ilmiah</th>
+                <th style="vertical-align : middle; text-align:center;">Tahfidz</th>
+                <th style="vertical-align : middle; text-align:center;">Matematika Lanjutan</th>
+                <th style="vertical-align : middle; text-align:center;">Biologi</th>
+                <th style="vertical-align : middle; text-align:center;">Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia</th>
+                <th style="vertical-align : middle; text-align:center;">Geografi</th>
+                <th style="vertical-align : middle; text-align:center;">Kimia Peminatan</th>
+                <th style="vertical-align : middle; text-align:center;">Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Informatika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Riset</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Fisika</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Sosiologi</th>
+                <th style="vertical-align : middle; text-align:center;">Pen. Biologi</th>
             </tr>
         </thead>
         <tbody>
             @forelse ($items as $item)
             <tr class="text-center">
                 <td style="vertical-align : middle; text-align:center;">{{ $item->user->nama }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->jurusan }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->matematika : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->keislaman : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->al_quran_hadits : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->akidah_akhlak : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->fikih : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->sejarah_kebudayaan_islam : '-' }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->bahasa_arab : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->bahasa_inggris : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->pendidikan_pancasila : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->bahasa_indonesia : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->matematika : '-' }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->ipa : '-' }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->ips : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->matematika : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->keislaman : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->bahasa_inggris : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->penjaskes : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->sejarah : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->kwu : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->karya_ilmiah : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '1') != '' ? $item->getNilai($item->nisn, 'X', '1')->tahfidz : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->al_quran_hadits : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->akidah_akhlak : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->fikih : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->sejarah_kebudayaan_islam : '-' }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->bahasa_arab : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->bahasa_inggris : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->pendidikan_pancasila : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->bahasa_indonesia : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->matematika : '-' }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->ipa : '-' }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->ips : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->matematika : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->keislaman : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->bahasa_inggris : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->penjaskes : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->sejarah : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->kwu : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->karya_ilmiah : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'X', '2') != '' ? $item->getNilai($item->nisn, 'X', '2')->tahfidz : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->al_quran_hadits : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->akidah_akhlak : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->fikih : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->sejarah_kebudayaan_islam : '-' }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->bahasa_arab : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->pendidikan_pancasila : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->bahasa_indonesia : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->matematika : '-' }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->bahasa_inggris : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->ipa : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->ips : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->matematika : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->keislaman : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->penjaskes : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->sejarah : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->kwu : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->karya_ilmiah : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->tahfidz : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->matematika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->biologi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->fisika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->kimia_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->geografi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->informatika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->pendalaman_riset_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->pendalaman_fisika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->pendalaman_sosiologi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->pendalaman_biologi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->kimia_c_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '1') != '' ? $item->getNilai($item->nisn, 'XI', '1')->sosiologi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->al_quran_hadits : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->akidah_akhlak : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->fikih : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->sejarah_kebudayaan_islam : '-' }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->bahasa_arab : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->pendidikan_pancasila : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->bahasa_indonesia : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->matematika : '-' }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->bahasa_inggris : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->ipa : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->ips : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->matematika : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->keislaman : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->penjaskes : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->sejarah : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->kwu : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->karya_ilmiah : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->tahfidz : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->matematika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->biologi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->fisika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->kimia_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->geografi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->informatika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->pendalaman_riset_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->pendalaman_fisika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->pendalaman_sosiologi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->pendalaman_biologi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->kimia_c_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XI', '2') != '' ? $item->getNilai($item->nisn, 'XI', '2')->sosiologi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->al_quran_hadits : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->akidah_akhlak : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->fikih : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->sejarah_kebudayaan_islam : '-' }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->bahasa_arab : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->pendidikan_pancasila : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->bahasa_indonesia : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->matematika : '-' }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->bahasa_inggris : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->ipa : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->ips : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->matematika : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->keislaman : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->penjaskes : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->sejarah : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->kwu : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->karya_ilmiah : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->tahfidz : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->matematika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->biologi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->fisika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->kimia_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->geografi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->informatika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->pendalaman_riset_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->pendalaman_fisika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->pendalaman_sosiologi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->pendalaman_biologi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->kimia_c_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '1') != '' ? $item->getNilai($item->nisn, 'XII', '1')->sosiologi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->al_quran_hadits : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->akidah_akhlak : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->fikih : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->sejarah_kebudayaan_islam : '-' }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->bahasa_arab : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->pendidikan_pancasila : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->bahasa_indonesia : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->matematika : '-' }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->bahasa_inggris : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->ipa : '-' }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->ips : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->penjaskes : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->sejarah : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->kwu : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->karya_ilmiah : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->tahfidz : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->matematika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->biologi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->fisika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->kimia_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->geografi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->informatika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->pendalaman_riset_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->pendalaman_fisika_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->pendalaman_sosiologi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->pendalaman_biologi_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->kimia_c_c : '-' }}</td>
+                <td style="vertical-align : middle; text-align:center;">{{ $item->getNilai($item->nisn, 'XII', '2') != '' ? $item->getNilai($item->nisn, 'XII', '2')->sosiologi_c : '-' }}</td>
             </tr>
             @empty
             <tr class="text-center">

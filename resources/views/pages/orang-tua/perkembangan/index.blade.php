@@ -24,15 +24,27 @@
         @forelse ($items as $item)
         var chart{{ $item->nisn }} = {
     series: [
-        { name: "Matematika", data: [
+        { name: "Al-Quran Hadits", data: [
             @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
-                {{ $item2->matematika }},
+                {{ $item2->al_quran_hadits }},
             @empty
             @endforelse
         ]},
-        { name: "Keislaman", data: [
+        { name: "Akidah Akhlak", data: [
             @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
-                {{ $item2->keislaman }},
+                {{ $item2->akidah_akhlak }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Fikih", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->fikih }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Sejarah Kebudayaan Islam", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->sejarah_kebudayaan_islam }},
             @empty
             @endforelse
         ]},
@@ -42,24 +54,120 @@
             @empty
             @endforelse
         ]},
+        { name: "Pendidikan Pancasila", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->pendidikan_pancasila }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Bahasa Indonesia", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->bahasa_indonesia }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Matematika", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->matematika }},
+            @empty
+            @endforelse
+        ]},
         { name: "Bahasa Inggris", data: [
             @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
                 {{ $item2->bahasa_inggris }},
             @empty
             @endforelse
         ]},
-        { name: "IPA", data: [
+        { name: "Pendidikan Pancasila", data: [
             @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
-                {{ $item2->ipa }},
+                {{ $item2->pendidikan_pancasila }},
             @empty
             @endforelse
         ]},
-        { name: "IPS", data: [
+        { name: "Penjaskes", data: [
             @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
-                {{ $item2->ips }},
+                {{ $item2->penjaskes }},
             @empty
             @endforelse
         ]},
+        { name: "Sejarah", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->sejarah }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Kewirausahaan", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->kwu }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Karya Ilmiah", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->karya_ilmiah }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Tahfidz", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->tahfidz }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Matematika Peminatan", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->matematika_c }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Biologi Peminatan", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->biologi_c }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Fisika Peminatan", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->matematika_c }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Kimia Peminatan", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->matematika_c }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Informatika", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->informatika }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Pendalaman Riset", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->pendalaman_riset }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Pendalaman Fisika", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->pendalaman_fisika_c }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Pendalaman Biologi", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->pendalaman_biologi_c }},
+            @empty
+            @endforelse
+        ]},
+        { name: "Pendalaman Sosiologi", data: [
+            @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
+                {{ $item2->pendalaman_sosiologi_c == '' ? 0 : $item2->pendalaman_sosiologi_c }},
+            @empty
+            @endforelse
+        ]}
     ],
 
     chart: {
@@ -77,7 +185,7 @@
     plotOptions: {
         bar: {
             horizontal: false,
-            columnWidth: "35%",
+            columnWidth: '100%',
             borderRadius: [6],
             borderRadiusApplication: 'end',
             borderRadiusWhenStacked: 'all'
@@ -110,14 +218,13 @@
         categories:
         [
             @foreach(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
-                "Kelas {{ $item2->jenjang }} {{ $item2->kelas }} Semester {{ $item2->semester }}",
+                "Kelas {{ $item2->jenjang }} {{ $item2->jurusan }} {{ $item2->kelas }} Semester {{ $item2->semester }}",
             @endforeach
         ],
         labels: {
             style: { cssClass: "grey--text lighten-2--text fill-color" },
         },
     },
-
 
     yaxis: {
         show: true,

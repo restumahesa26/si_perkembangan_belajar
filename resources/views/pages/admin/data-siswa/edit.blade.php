@@ -12,26 +12,11 @@
                     @csrf
                     @method('PUT')
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label for="nisn">NISN</label><sup class="text-danger">(*)</sup>
                                 <input type="number" name="nisn" class="form-control @error('nisn') is-invalid @enderror" id="nisn" placeholder="NISN" value="{{ old('nisn', $item->nisn) }}" required>
                                 @error('nisn')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label for="jurusan">Jurusan</label><sup class="text-danger">(*)</sup>
-                                <select name="jurusan" id="jurusan" class="jurusan w-100" required>
-                                    <option value=""></option>
-                                    <option value="IPA" @if(old('jurusan', $item->jurusan) == 'IPA') selected @endif>IPA</option>
-                                    <option value="IPS" @if(old('jurusan', $item->jurusan) == 'IPS') selected @endif>IPS</option>
-                                </select>
-                                @error('jurusan')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -256,6 +241,54 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row mt-2">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="minat_jurusan">Minat Jurusan</label>
+                                <input type="text" name="minat_jurusan" class="form-control @error('minat_jurusan') is-invalid @enderror" id="minat_jurusan" placeholder="Minat Jurusan" value="{{ old('minat_jurusan', $item->minat_jurusan) }}">
+                                @error('minat_jurusan')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="hobi">Hobi</label>
+                                <input type="number" name="hobi" class="form-control @error('hobi') is-invalid @enderror" id="hobi" placeholder="Hobi" value="{{ old('hobi', $item->hobi) }}">
+                                @error('hobi')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="cita_cita">Cita-Cita</label>
+                                <input type="text" name="cita_cita" class="form-control @error('cita_cita') is-invalid @enderror" id="cita_cita" placeholder="Cita-Cita" value="{{ old('cita_cita', $item->cita_cita) }}">
+                                @error('cita_cita')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="target_prestasi">Target Prestasi</label>
+                                <input type="text" name="target_prestasi" class="form-control @error('target_prestasi') is-invalid @enderror" id="target_prestasi" placeholder="Target Prestasi" value="{{ old('target_prestasi', $item->target_prestasi) }}">
+                                @error('target_prestasi')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                    </div>
                     <div class="d-flex justify-content-start mt-3">
                         <a href="{{ route('data-siswa.index') }}" class="btn btn-secondary me-2">Kembali</a>
                         <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
@@ -277,11 +310,6 @@
         $(document).ready(function() {
             $('.orang_tua').select2({
                 placeholder: "-- Pilih Orang Tua --",
-                allowClear: true,
-                theme: "classic",
-            });
-            $('.jurusan').select2({
-                placeholder: "-- Pilih Jurusan --",
                 allowClear: true,
                 theme: "classic",
             });

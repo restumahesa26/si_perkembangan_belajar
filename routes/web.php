@@ -47,12 +47,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/perkembangan-siswa/{nisn}/cetak-excel', [PerkembanganController::class, 'cetak_excel'])->name('rekapan.cetak-excel')->middleware('role:Orang Tua');
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
     Route::get('/laporan', [LaporanController::class, 'index'])->name('laporan.index')->middleware('role:Admin');
-    Route::get('/laporan/cetak-nilai-siswa', [LaporanController::class, 'cetak_siswa'])->name('laporan.cetak-siswa')->middleware('role:Admin');
     Route::get('/laporan/cetak-nilai-siswa-excel', [LaporanController::class, 'cetak_siswa_excel'])->name('laporan.cetak-siswa-excel')->middleware('role:Admin');
-    Route::get('/laporan/cetak-semua-nilai-siswa', [LaporanController::class, 'cetak_semua'])->name('laporan.cetak-semua')->middleware('role:Admin');
     Route::get('/laporan/cetak-semua-nilai-siswa-excel', [LaporanController::class, 'cetak_semua_excel'])->name('laporan.cetak-semua-excel')->middleware('role:Admin');
-    Route::get('/laporan/cetak-semua-nilai-siswa-jurusan', [LaporanController::class, 'cetak_jurusan'])->name('laporan.cetak-jurusan')->middleware('role:Admin');
-    Route::get('/laporan/cetak-semua-nilai-siswa-jurusan-excel', [LaporanController::class, 'cetak_jurusan_excel'])->name('laporan.cetak-jurusan-excel')->middleware('role:Admin');
     Route::get('/laporan/cetak-data-siswa', [LaporanController::class, 'cetak_data_siswa'])->name('laporan.cetak-data-siswa')->middleware('role:Admin');
     Route::get('/laporan/cetak-data-siswa-excel', [LaporanController::class, 'cetak_data_siswa_excel'])->name('laporan.cetak-data-siswa-excel')->middleware('role:Admin');
     Route::get('/laporan/cetak-data-orang-tua', [LaporanController::class, 'cetak_data_orang_tua'])->name('laporan.cetak-data-orang-tua')->middleware('role:Admin');

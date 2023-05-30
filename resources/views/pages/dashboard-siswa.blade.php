@@ -12,6 +12,76 @@
             </div>
         </div>
     </div>
+    <div class="col-lg-12">
+        <div class="card w-100">
+            <div class="card-body">
+                <h5 class="card-title">Prestasi Akademik Siswa</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered text-nowrap">
+                        <thead>
+                            <tr class="text-center">
+                                <th>No</th>
+                                <th>Nama Prestasi</th>
+                                <th>Tingkat</th>
+                                <th style="width: 30%">Deskrispi</th>
+                                <th style="width: 20%">Sertifikat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @forelse ($item->prestasi_akademik as $item2)
+                            <tr>
+                                <td style="vertical-align : middle; text-align:center;">{{ $loop->iteration }}</td>
+                                <td style="vertical-align : middle; text-align:center;">{{ $item2->prestasi }}</td>
+                                <td style="vertical-align : middle; text-align:center;">{{ $item2->tingkat }}</td>
+                                <td style="vertical-align : middle; text-align:justify;">{{ $item2->deskripsi }}</td>
+                                <td style="vertical-align : middle; text-align:center;">{{ $item2->sertifikat }}</td>
+                            </tr>
+                            @empty
+                            <tr class="text-center">
+                                <td colspan="5">-- Data Kosong --</td>
+                            </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="card w-100">
+            <div class="card-body">
+                <h5 class="card-title">Prestasi non Akademik Siswa</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered text-nowrap">
+                        <thead>
+                            <tr class="text-center">
+                                <th>No</th>
+                                <th>Nama Prestasi</th>
+                                <th>Tingkat</th>
+                                <th style="width: 30%">Deskrispi</th>
+                                <th style="width: 20%">Sertifikat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @forelse ($item->prestasi_non_akademik as $item2)
+                            <tr>
+                                <td style="vertical-align : middle; text-align:center;">{{ $loop->iteration }}</td>
+                                <td style="vertical-align : middle; text-align:center;">{{ $item2->prestasi }}</td>
+                                <td style="vertical-align : middle; text-align:center;">{{ $item2->tingkat }}</td>
+                                <td style="vertical-align : middle; text-align:justify;">{{ $item2->deskripsi }}</td>
+                                <td style="vertical-align : middle; text-align:center;">{{ $item2->sertifikat }}</td>
+                            </tr>
+                            @empty
+                            <tr class="text-center">
+                                <td colspan="5">-- Data Kosong --</td>
+                            </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 @endsection
 
@@ -21,7 +91,7 @@
     series: [
         { name: "Rata-Rata", data: [
             @forelse(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
-                {{ number_format(($item2->matematika + $item2->keislaman + $item2->bahasa_arab + $item2->bahasa_inggris + $item2->ipa + $item2->ips) / 6, 2)  }},
+                {{ $item2->getRataNilai($item2->id)  }},
             @empty
             @endforelse
         ]},
@@ -75,7 +145,7 @@
         categories:
         [
             @foreach(App\Helper\Helper::getNilaiRapor($item->nisn) as $item2)
-                "Kelas {{ $item2->jenjang }} {{ $item2->kelas }} Semester {{ $item2->semester }}",
+                "Kelas {{ $item2->jenjang }} {{ $item2->jurusan }} {{ $item2->kelas }} Semester {{ $item2->semester }}",
             @endforeach
         ],
         labels: {

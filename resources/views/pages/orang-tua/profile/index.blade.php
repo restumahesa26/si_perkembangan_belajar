@@ -320,11 +320,35 @@
                     <li style="padding-top: 10px">
                         {{ $item2->user->nama }}<br>
                         <ul>
-                            <li>- NISN : {{ $item2->nisn }}</li>
-                            <li>- Jenis Kelamin : {{ $item2->jenis_kelamin == 'L' ? 'Laki-Laki' : 'Perempuan' }}</li>
-                            <li>- Tempat, Tanggal Lahir : {{ $item2->tempat_lahir }}, {{ \Carbon\Carbon::parse($item2->tanggal_lahir)->translatedFormat('d F Y') }}</li>
-                            <li>- Nomor Handphone : {{ $item2->no_hp }}</li>
-                            <li>- Email : {{ $item2->user->email }}</li>
+                            <table class="table table-borderless" style="margin: 0px; padding: 0px;">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 15%; padding: 0;">NISN</td>
+                                        <td style="width: 2%; padding: 0;">:</td>
+                                        <td style="padding: 0;">{{ $item2->nisn }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 15%; padding: 0;">Jenis Kelamin</td>
+                                        <td style="width: 2%; padding: 0;">:</td>
+                                        <td style="padding: 0;">{{ $item2->jenis_kelamin == 'L' ? 'Laki-Laki' : 'Perempuan' }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 15%; padding: 0;">Tempat, Tanggal Lahir</td>
+                                        <td style="width: 2%; padding: 0;">:</td>
+                                        <td style="padding: 0;">{{ $item2->tempat_lahir }}, {{ \Carbon\Carbon::parse($item2->tanggal_lahir)->translatedFormat('d F Y') }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 15%; padding: 0;">Nomor Handphone</td>
+                                        <td style="width: 2%; padding: 0;">:</td>
+                                        <td style="padding: 0;">{{ $item2->no_hp }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 15%; padding: 0;">Email</td>
+                                        <td style="width: 2%; padding: 0;">:</td>
+                                        <td style="padding: 0;">{{ $item2->user->email }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </ul>
                     </li>
                     @empty

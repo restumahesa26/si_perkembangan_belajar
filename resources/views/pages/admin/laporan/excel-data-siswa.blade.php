@@ -38,7 +38,6 @@
                 <th style="vertical-align : middle; text-align:center;">No</th>
                 <th style="vertical-align : middle; text-align:center;">NISN</th>
                 <th style="vertical-align : middle; text-align:center;">Nama</th>
-                <th style="vertical-align : middle; text-align:center;">Jurusan</th>
                 <th style="vertical-align : middle; text-align:center;">Jenis Kelamin</th>
                 <th style="vertical-align : middle; text-align:center;">Tempat, Tanggal Lahir</th>
                 <th style="vertical-align : middle; text-align:center;">Nama Ayah</th>
@@ -60,7 +59,6 @@
                 <td style="vertical-align : middle; text-align:center;">{{ $loop->iteration }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->nisn }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->user->nama }}</td>
-                <td style="vertical-align : middle; text-align:center;">{{ $item->jurusan }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->jenis_kelamin == 'L' ? 'Laki-Laki' : 'Perempuan' }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->tempat_lahir }}, {{ \Carbon\Carbon::parse($item->tanggal_lahir)->translatedFormat('d F Y') }}</td>
                 <td style="vertical-align : middle; text-align:center;">{{ $item->orang_tua->nama_ayah }}</td>

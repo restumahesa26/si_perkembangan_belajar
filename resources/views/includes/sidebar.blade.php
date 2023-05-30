@@ -54,7 +54,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link @if(Route::is('laporan.')) active @endif" href="{{ route('admin-perkembangan.index') }}" href="{{ route('laporan.index') }}" aria-expanded="false">
+                    <a class="sidebar-link @if(Route::is('laporan.')) active @endif" href="{{ route('laporan.index') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-file-text"></i>
                         </span>

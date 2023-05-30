@@ -23,6 +23,16 @@ class Siswa extends Model
         return $this->hasOne(User::class, 'id', 'user_id');
     }
 
+    public function prestasi_akademik()
+    {
+        return $this->hasMany(PrestasiAkademik::class, 'nisn', 'nisn');
+    }
+
+    public function prestasi_non_akademik()
+    {
+        return $this->hasMany(PrestasiNonAkademik::class, 'nisn', 'nisn');
+    }
+
     public function orang_tua()
     {
         return $this->hasOne(OrangTua::class, 'id', 'orang_tua_id');
@@ -45,9 +55,27 @@ class Siswa extends Model
         $item = NilaiRapor::where('nisn', $nisn)->where('jenjang', $jenjang)->where('semester', $semester)->first();
 
         if ($item) {
-            $value = $item->matematika + $item->keislaman + $item->bahasa_arab + $item->bahasa_inggris + $item->ipa + $item->ips;
+            if ($item->jenjang == 'X') {
+                $value = $item->al_quran_hadits + $item->akidah_akhlak + $item->fikih + $item->sejarah_kebudayaan_islam + $item->bahasa_arab + $item->pendidikan_pancasila + $item->bahasa_indonesia + $item->matematika + $item->ipa + $item->ips + $item->bahasa_inggris + $item->penjaskes + $item->sejarah + $item->kwu + $item->karya_ilmiah + $item->tahfidz;
 
-            return number_format($value / 6, 2) ;
+                return number_format($value / 16, 2) ;
+            }elseif ($item->jenjang == 'XI' && $item->jurusan == 'IPA') {
+                $value = $item->al_quran_hadits + $item->akidah_akhlak + $item->fikih + $item->sejarah_kebudayaan_islam + $item->bahasa_arab + $item->pendidikan_pancasila + $item->bahasa_indonesia + $item->matematika + $item->bahasa_inggris + $item->penjaskes + $item->sejarah + $item->kwu + $item->karya_ilmiah + $item->tahfidz + $item->matematika_c + $item->biologi_c + $item->fisika_c + $item->kimia_c + $item->geografi_c + $item->informatika_c + $item->pendalaman_riset_c + $item->pendalaman_fisika_c;
+
+                return number_format($value / 22, 2) ;
+            }elseif ($item->jenjang == 'XI' && $item->jurusan == 'IPS') {
+                $value = $item->al_quran_hadits + $item->akidah_akhlak + $item->fikih + $item->sejarah_kebudayaan_islam + $item->bahasa_arab + $item->pendidikan_pancasila + $item->bahasa_indonesia + $item->matematika + $item->ipa + $item->ips + $item->bahasa_inggris + $item->penjaskes + $item->sejarah + $item->kwu + $item->karya_ilmiah + $item->tahfidz + $item->matematika_c + $item->biologi_c + $item->fisika_c + $item->kimia_c + $item->informatika_c + $item->pendalaman_riset_c + $item->pendalaman_sosiologi_c;
+
+                return number_format($value / 22, 2) ;
+            }elseif ($item->jenjang == 'XII' && $item->jurusan == 'IPA') {
+                $value = $item->al_quran_hadits + $item->akidah_akhlak + $item->fikih + $item->sejarah_kebudayaan_islam + $item->bahasa_arab + $item->pendidikan_pancasila + $item->bahasa_indonesia + $item->matematika + $item->ipa + $item->ips + $item->bahasa_inggris + $item->penjaskes + $item->sejarah + $item->kwu + $item->karya_ilmiah + $item->tahfidz + $item->matematika_c + $item->biologi_c + $item->fisika_c + $item->kimia_c + $item->sosiologi_c + $item->informatika_c + $item->pendalaman_riset_c + $item->pendalaman_biologi_c;
+
+                return number_format($value / 22, 2) ;
+            }elseif ($item->jenjang == 'XII' && $item->jurusan == 'IPS') {
+                $value = $item->al_quran_hadits + $item->akidah_akhlak + $item->fikih + $item->sejarah_kebudayaan_islam + $item->bahasa_arab + $item->pendidikan_pancasila + $item->bahasa_indonesia + $item->matematika + $item->ipa + $item->ips + $item->bahasa_inggris + $item->penjaskes + $item->sejarah + $item->kwu + $item->karya_ilmiah + $item->tahfidz + $item->matematika_c + $item->biologi_c + $item->fisika_c + $item->kimia_c + $item->geografi_c + $item->informatika_c + $item->pendalaman_riset_c + $item->pendalaman_fisika_c;
+
+                return number_format($value / 22, 2) ;
+            }
         }else {
             return '-';
         }

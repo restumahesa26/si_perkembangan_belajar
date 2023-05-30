@@ -222,6 +222,54 @@
                                 @enderror
                             </div>
                         </div>
+                        <div class="row mt-2">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="minat_jurusan">Minat Jurusan</label>
+                                    <input type="text" name="minat_jurusan" class="form-control @error('minat_jurusan') is-invalid @enderror" id="minat_jurusan" placeholder="Minat Jurusan" value="{{ old('minat_jurusan', $item->minat_jurusan) }}">
+                                    @error('minat_jurusan')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="hobi">Hobi</label>
+                                    <input type="number" name="hobi" class="form-control @error('hobi') is-invalid @enderror" id="hobi" placeholder="Hobi" value="{{ old('hobi', $item->hobi) }}">
+                                    @error('hobi')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="cita_cita">Cita-Cita</label>
+                                    <input type="text" name="cita_cita" class="form-control @error('cita_cita') is-invalid @enderror" id="cita_cita" placeholder="Cita-Cita" value="{{ old('cita_cita', $item->cita_cita) }}">
+                                    @error('cita_cita')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="target_prestasi">Target Prestasi</label>
+                                    <input type="text" name="target_prestasi" class="form-control @error('target_prestasi') is-invalid @enderror" id="target_prestasi" placeholder="Target Prestasi" value="{{ old('target_prestasi', $item->target_prestasi) }}">
+                                    @error('target_prestasi')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-primary mt-2">Simpan Perubahan</button>
                 </form>

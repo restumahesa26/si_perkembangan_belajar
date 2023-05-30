@@ -18,7 +18,6 @@
                                 <th>No</th>
                                 <th>NISN</th>
                                 <th>Nama</th>
-                                <th>Jurusan</th>
                                 <th>Nama Ayah</th>
                                 <th>Nama Ibu</th>
                                 <th>Aksi</th>
@@ -30,7 +29,6 @@
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $item->nisn }}</td>
                                 <td>{{ $item->user->nama }}</td>
-                                <td>{{ $item->jurusan }}</td>
                                 <td>{{ $item->orang_tua->nama_ayah }}</td>
                                 <td>{{ $item->orang_tua->nama_ibu }}</td>
                                 <td>
