@@ -221,7 +221,7 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="npsn">NPSN</label>
-                                <input type="number" name="npsn" class="form-control @error('npsn') is-invalid @enderror" id="npsn" placeholder="NPSN" value="{{ old('npsn', $item->npsn) }}">
+                                <input type="text" name="npsn" class="form-control @error('npsn') is-invalid @enderror" id="npsn" placeholder="NPSN" value="{{ old('npsn', $item->npsn) }}">
                                 @error('npsn')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -256,7 +256,7 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="hobi">Hobi</label>
-                                <input type="number" name="hobi" class="form-control @error('hobi') is-invalid @enderror" id="hobi" placeholder="Hobi" value="{{ old('hobi', $item->hobi) }}">
+                                <input type="text" name="hobi" class="form-control @error('hobi') is-invalid @enderror" id="hobi" placeholder="Hobi" value="{{ old('hobi', $item->hobi) }}">
                                 @error('hobi')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
