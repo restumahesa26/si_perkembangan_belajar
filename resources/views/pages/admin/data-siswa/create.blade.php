@@ -11,11 +11,22 @@
                 <form action="{{ route('data-siswa.store') }}" method="post" class="mt-3">
                     @csrf
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label for="nisn">NISN</label><sup class="text-danger">(*)</sup>
                                 <input type="number" name="nisn" class="form-control @error('nisn') is-invalid @enderror" id="nisn" placeholder="NISN" value="{{ old('nisn') }}" required>
                                 @error('nisn')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="angkatan">Angkatan</label><sup class="text-danger">(*)</sup>
+                                <input type="number" name="angkatan" class="form-control @error('angkatan') is-invalid @enderror" id="angkatan" placeholder="Angkatan" value="{{ old('angkatan') }}" required>
+                                @error('angkatan')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

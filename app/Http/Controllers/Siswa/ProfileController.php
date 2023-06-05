@@ -18,6 +18,7 @@ class ProfileController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'jenis_kelamin' => ['required', 'in:L,P'],
+            'angkatan' => ['required', 'numeric'],
             'tempat_lahir' => ['required', 'string', 'max:255'],
             'tanggal_lahir' => ['required', 'date'],
             'status_keluarga' => ['required', 'string', 'max:255'],
@@ -92,6 +93,7 @@ class ProfileController extends Controller
 
         $item->update([
             'nisn' => $request->nisn,
+            'angkatan' => $request->angkatan,
             'jenis_kelamin' => $request->jenis_kelamin,
             'alamat' => $request->alamat,
             'tempat_lahir' => $request->tempat_lahir,

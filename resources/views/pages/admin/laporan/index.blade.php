@@ -32,10 +32,20 @@
     <div class="col-md-4">
         <div class="card w-100">
             <div class="card-body">
-                <h5 class="card-title">Data Siswa</h5>
-                <p style="margin-bottom: 14px">Semua data siswa</p>
-                <a href="{{ route('laporan.cetak-data-siswa') }}" class="btn btn-danger me-2" target="_blank">Cetak PDF</a>
-                <a href="{{ route('laporan.cetak-data-siswa-excel') }}" class="btn btn-success" target="_blank">Cetak Excel</a>
+                <h5 class="card-title">Nilai Per Angkatan</h5>
+                <form method="get" target="_blank" action="{{ route('laporan.cetak-angkatan-excel') }}">
+                    <div class="form-group">
+                        <select name="angkatan" id="angkatan" class="angkatan w-100" required>
+                            <option value=""></option>
+                            @foreach ($angkatan as $item)
+                                <option value="{{ $item }}" @if (old('angkatan') == $item)
+                                    selected
+                                @endif>{{ $item }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-success mt-2" id="nilai-siswa-excel">Cetak Excel</button>
+                </form>
             </div>
         </div>
         <div class="card w-100 mt-3">
@@ -44,6 +54,16 @@
                 <p style="margin-bottom: 14px">Semua data orang tua</p>
                 <a href="{{ route('laporan.cetak-data-orang-tua') }}" class="btn btn-danger me-2" target="_blank">Cetak PDF</a>
                 <a href="{{ route('laporan.cetak-data-orang-tua-excel') }}" class="btn btn-success" target="_blank">Cetak Excel</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card w-100">
+            <div class="card-body">
+                <h5 class="card-title">Data Siswa</h5>
+                <p style="margin-bottom: 14px">Semua data siswa</p>
+                <a href="{{ route('laporan.cetak-data-siswa') }}" class="btn btn-danger me-2" target="_blank">Cetak PDF</a>
+                <a href="{{ route('laporan.cetak-data-siswa-excel') }}" class="btn btn-success" target="_blank">Cetak Excel</a>
             </div>
         </div>
     </div>
@@ -63,8 +83,8 @@
                 allowClear: true,
                 theme: "classic",
             });
-            $('.jurusan').select2({
-                placeholder: "-- Pilih Jurusan --",
+            $('.angkatan').select2({
+                placeholder: "-- Pilih Angkatan --",
                 allowClear: true,
                 theme: "classic",
             });

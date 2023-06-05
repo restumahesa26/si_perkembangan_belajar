@@ -61,6 +61,7 @@ class UserSeeder extends Seeder
             'user_id' => $siswa->id,
             'orang_tua_id' => $orang_tua->id,
             'jenis_kelamin' => 'L',
+            'angkatan' => '2020',
             'tempat_lahir' => 'Bengkulu',
             'tanggal_lahir' => '2022-12-22',
             'status_keluarga' => 'Anak Kandung',

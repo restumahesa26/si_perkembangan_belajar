@@ -48,7 +48,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
     Route::get('/laporan', [LaporanController::class, 'index'])->name('laporan.index')->middleware('role:Admin');
     Route::get('/laporan/cetak-nilai-siswa-excel', [LaporanController::class, 'cetak_siswa_excel'])->name('laporan.cetak-siswa-excel')->middleware('role:Admin');
-    Route::get('/laporan/cetak-semua-nilai-siswa-excel', [LaporanController::class, 'cetak_semua_excel'])->name('laporan.cetak-semua-excel')->middleware('role:Admin');
+    Route::get('/laporan/cetak-angkatan-nilai-siswa-excel', [LaporanController::class, 'cetak_semua_excel'])->name('laporan.cetak-semua-excel')->middleware('role:Admin');
+    Route::get('/laporan/cetak-semua-nilai-siswa-excel', [LaporanController::class, 'cetak_angkatan_excel'])->name('laporan.cetak-angkatan-excel')->middleware('role:Admin');
     Route::get('/laporan/cetak-data-siswa', [LaporanController::class, 'cetak_data_siswa'])->name('laporan.cetak-data-siswa')->middleware('role:Admin');
     Route::get('/laporan/cetak-data-siswa-excel', [LaporanController::class, 'cetak_data_siswa_excel'])->name('laporan.cetak-data-siswa-excel')->middleware('role:Admin');
     Route::get('/laporan/cetak-data-orang-tua', [LaporanController::class, 'cetak_data_orang_tua'])->name('laporan.cetak-data-orang-tua')->middleware('role:Admin');

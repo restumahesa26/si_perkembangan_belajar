@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Exports\DataOrangTuaExport;
 use App\Exports\DataSiswaExport;
+use App\Exports\NilaiAngkatanExport;
 use App\Exports\NilaiPerJurusanExport;
 use App\Exports\NilaiPerSiswaExport;
 use App\Exports\NilaiSemuaSiswaExport;
@@ -18,8 +19,9 @@ class LaporanController extends Controller
     public function index()
     {
         $items = Siswa::join('users', 'users.id', 'siswa.user_id')->orderBy('users.nama', 'ASC')->get();
+        $angkatan = Siswa::distinct('angkatan')->pluck('angkatan');
 
-        return view('pages.admin.laporan.index', compact('items'));
+        return view('pages.admin.laporan.index', compact('items', 'angkatan'));
     }
 
     public function cetak_data_siswa()
@@ -39,6 +41,11 @@ class LaporanController extends Controller
     public function cetak_siswa_excel(Request $request)
     {
         return Excel::download(new NilaiPerSiswaExport($request->siswa), 'nilai-siswa.xlsx');
+    }
+
+    public function cetak_angkatan_excel(Request $request)
+    {
+        return Excel::download(new NilaiAngkatanExport($request->angkatan), 'nilai-siswa.xlsx');
     }
 
     public function cetak_semua_excel()
