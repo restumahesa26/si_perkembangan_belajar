@@ -31,7 +31,7 @@
                         <div class="col-md-2 jurusan @if($item->jenjang == 'X') d-none @endif">
                             <div class="form-group">
                                 <label for="jurusan">Jurusan</label><sup class="text-danger">(*)</sup>
-                                <select name="jurusan" id="jurusan" class="form-control w-100" required>
+                                <select name="jurusan" id="jurusan" class="form-control w-100">
                                     <option value="" hidden>--Pilih Jurusan Kelas--</option>
                                     <option value="IPA" @if(old('jurusan', $item->jurusan) == 'IPA') selected @endif>IPA</option>
                                     <option value="IPS" @if(old('jurusan', $item->jurusan) == 'IPS') selected @endif>IPS</option>

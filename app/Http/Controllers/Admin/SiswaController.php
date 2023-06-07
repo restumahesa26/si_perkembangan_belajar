@@ -231,4 +231,32 @@ class SiswaController extends Controller
         Alert::toast('Berhasil Menghapus Data Siswa', 'success')->position('top');
         return redirect()->route('data-siswa.index');
     }
+
+    public function lulus($id)
+    {
+        $item = Siswa::findOrFail($id);
+
+        $user = User::findOrFail($item->user_id);
+
+        $user->update([
+            'status' => 'lulus'
+        ]);
+
+        Alert::toast('Berhasil Set Kelulusan Siswa', 'success')->position('top');
+        return redirect()->route('data-siswa.edit', $id);
+    }
+
+    public function batal_lulus($id)
+    {
+        $item = Siswa::findOrFail($id);
+
+        $user = User::findOrFail($item->user_id);
+
+        $user->update([
+            'status' => NULL
+        ]);
+
+        Alert::toast('Berhasil Batal Kelulusan Siswa', 'success')->position('top');
+        return redirect()->route('data-siswa.edit', $id);
+    }
 }

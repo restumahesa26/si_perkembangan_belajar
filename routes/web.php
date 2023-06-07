@@ -36,6 +36,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('data-siswa', SiswaController::class)->middleware('role:Admin');
     Route::resource('prestasi-akademik', PrestasiAkademikController::class)->middleware('role:Admin');
     Route::resource('prestasi-non-akademik', PrestasiNonAkademikController::class)->middleware('role:Admin');
+    Route::get('/data-siswa/lulus/{id}', [SiswaController::class, 'lulus'])->name('data-siswa.lulus')->middleware('role:Admin');
+    Route::get('/data-siswa/batal-lulus/{id}', [SiswaController::class, 'batal_lulus'])->name('data-siswa.batal-lulus')->middleware('role:Admin');
     Route::resource('data-siswa', SiswaController::class)->middleware('role:Admin');
     Route::resource('data-nilai-rapor', NilaiRaporController::class)->middleware('role:Siswa');
     Route::put('/siswa/update-profile', [SiswaProfileController::class, 'update'])->name('siswa.update-profile')->middleware('role:Siswa');

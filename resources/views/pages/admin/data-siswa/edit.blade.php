@@ -305,6 +305,11 @@
                             <a href="{{ route('data-siswa.index') }}" class="btn btn-secondary me-2">Kembali</a>
                             <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
                         </div>
+                        @if ($item->user->status == 'lulus')
+                            <a href="{{ route('data-siswa.batal-lulus', $item->nisn) }}" class="btn btn-warning me-2">Batal Kelulusan</a>
+                        @else
+                            <a href="{{ route('data-siswa.lulus', $item->nisn) }}" class="btn btn-success me-2">Set Kelulusan</a>
+                        @endif
                     </div>
                 </form>
             </div>

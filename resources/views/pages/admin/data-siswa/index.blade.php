@@ -30,7 +30,7 @@
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $item->nisn }}</td>
                                 <td>{{ $item->user->nama }}</td>
-                                <td>{{ $item->angkatan }}</td>
+                                <td>{{ $item->user->status != NULL ? 'Lulus' : $item->angkatan }}</td>
                                 <td>{{ $item->orang_tua->nama_ayah }}</td>
                                 <td>{{ $item->orang_tua->nama_ibu }}</td>
                                 <td>

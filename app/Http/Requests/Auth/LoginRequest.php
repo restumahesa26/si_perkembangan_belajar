@@ -54,11 +54,27 @@ class LoginRequest extends FormRequest
         // RateLimiter::clear($this->throttleKey());
         $user = User::where('email', $this->login)->orWhere('username', $this->login)->first();
 
-        if(!$user || !Hash::check($this->password, $user->password)) {
+        if(!$user) {
             RateLimiter::hit($this->throttleKey());
 
             throw ValidationException::withMessages([
-                'login' => 'Email / Username dan Password Tidak Cocok'
+                'login' => 'Email / Username Tidak Terdaftar di Sistem'
+            ]);
+        }
+
+        if ($user->status == 'lulus') {
+            RateLimiter::hit($this->throttleKey());
+
+            throw ValidationException::withMessages([
+                'login' => 'Anda Sudah Tidak Bisa Mengakses Sistem Ini'
+            ]);
+        }
+
+        if (!Hash::check($this->password, $user->password)) {
+            RateLimiter::hit($this->throttleKey());
+
+            throw ValidationException::withMessages([
+                'login' => 'Password Tidak Cocok'
             ]);
         }
 
