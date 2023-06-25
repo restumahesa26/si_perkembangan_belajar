@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Imports\OrangTuaImport;
 use App\Models\OrangTua;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -10,6 +11,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Validation\Rules;
+use Maatwebsite\Excel\Facades\Excel;
 
 class OrangTuaController extends Controller
 {
@@ -243,5 +245,20 @@ class OrangTuaController extends Controller
 
         Alert::toast('Berhasil Menghapus Data Orang Tua', 'success')->position('top');
         return redirect()->route('data-orang-tua.index');
+    }
+
+    public function import(Request $request)
+    {
+        $request->validate([
+            'file' => 'required|file|mimes:xlx,xls,xlsx'
+        ]);
+
+        $file = $request->file('file');
+
+        $nama_file = rand().$file->getClientOriginalName();
+        $file->move('file_orang_tua', $nama_file);
+
+        Excel::import(new OrangTuaImport, public_path('file_orang_tua/' . $nama_file));
+        return redirect()->route('data-orang-tua.index')->with('success', 'Berhasil Import Data Orang Tua');
     }
 }

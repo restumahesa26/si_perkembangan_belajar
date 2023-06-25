@@ -30,19 +30,19 @@
                 </li>
                 @if (Auth::user()->role == 'Admin')
                 <li class="sidebar-item">
-                    <a class="sidebar-link @if(Route::is('data-siswa.*')) active @endif" href="{{ route('data-siswa.index') }}" aria-expanded="false">
-                        <span>
-                            <i class="ti ti-school"></i>
-                        </span>
-                        <span class="hide-menu">Data Siswa</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
                     <a class="sidebar-link @if(Route::is('data-orang-tua.*')) active @endif" href="{{ route('data-orang-tua.index') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-friends"></i>
                         </span>
                         <span class="hide-menu">Data Orang Tua</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link @if(Route::is('data-siswa.*')) active @endif" href="{{ route('data-siswa.index') }}" aria-expanded="false">
+                        <span>
+                            <i class="ti ti-school"></i>
+                        </span>
+                        <span class="hide-menu">Data Siswa</span>
                     </a>
                 </li>
                 <li class="sidebar-item">

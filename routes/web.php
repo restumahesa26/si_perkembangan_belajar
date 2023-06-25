@@ -32,6 +32,7 @@ Route::get('/', function () {
 
 Route::middleware('auth')->group(function () {
     Route::resource('data-admin', AdminController::class)->middleware('role:Admin');
+    Route::post('/data-orang-tua/import-data',[OrangTuaController::class, 'import'])->name('data-orang-tua.import');
     Route::resource('data-orang-tua', OrangTuaController::class)->middleware('role:Admin');
     Route::resource('data-siswa', SiswaController::class)->middleware('role:Admin');
     Route::resource('prestasi-akademik', PrestasiAkademikController::class)->middleware('role:Admin');
