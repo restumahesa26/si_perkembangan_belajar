@@ -3,6 +3,7 @@
 /public/build
 /public/hot
 /public/storage
+/public/file_orang_tua
 /storage/*.key
 /vendor
 .env.backup
